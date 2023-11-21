@@ -1,0 +1,38 @@
+.post-li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.post-cover__item {
+    width: 100%;
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: cover;
+}
+
+.card {
+    border: 1px solid #ddd; /* Ajoute une bordure grise */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Évite que les coins arrondis ne coupent l'image */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+}
+
+.card-footer {
+    background-color: #f8f9fa; /* Couleur de fond pour le pied de la carte */
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: right;
+    border-radius: 0 0 8px 8px; /* Coins arrondis en bas seulement */
+}
+
