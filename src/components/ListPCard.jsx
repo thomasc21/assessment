@@ -2,6 +2,8 @@ import PCard from "./PCard";
 import '../styles/ListPCard.css';
 import React, { useState } from 'react';
 
+
+
 function ListPCard(posts) {
     //get all data
   const { list } = posts;
@@ -16,14 +18,17 @@ function ListPCard(posts) {
 
     //get number rest of cards
     const restOfCards = list.length - visibleCards;
+
   
     return (
       <div className="list-p-card">
         {list.slice(0, visibleCards).map((item, index) => (
-          <PCard key={index} {...item} />
+           
+          <PCard key={index}{...item} />
         ))}
+        
         {list.length > visibleCards && (
-          <button onClick={handleShowMore}>More ({restOfCards}) </button>
+          <button id="ButtonMore" onClick={handleShowMore}>More ({restOfCards}) </button>
         )}
       </div>
     );

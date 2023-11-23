@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Axios from "axios";
 import Banner from "./Banner";
-
 import ListPCard from "./ListPCard";
+import '../styles/Home.css';
 
 
 function Home(){
@@ -60,23 +60,23 @@ function Home(){
             );
         }
     },[ selectedCategorie, data]);
-
+   
     return (
         <div className="App">
             <Banner title={"POSTS"}/>
-            <div className="filter">
+             <div className="filter">
            < select className="form-select" onChange={(e) => setSelectedCategorie(e.target.value)} >
                     <option value="All categories">All categories</option>
                         {categories.map((categorie) => (
-                        <option key={categorie.value} value={categorie.value} >
+                        <option key={categorie.value} value={categorie.value}  >
                             {categorie.label}
                         </option>
                     ))}
                 </select>
             </div>
-            <div className="posts row">
+             <div className="posts row">
                 <ListPCard list={filteredData}/>
-            </div>   
+            </div>             
         </div>
     );
 }

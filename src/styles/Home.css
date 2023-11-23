@@ -1,29 +1,5 @@
-.App {
-    text-align: center; /* Centre le contenu dans le conteneur principal */
-}
-
-.posts {
+.filter{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Pour aligner les cartes à gauche et à droite */
-    margin: 20px; /* Marge autour de la grille de cartes */
-}
-
-.post-li {
-    width: calc(25% - 20px); /* Ajustez la largeur des cartes, avec une marge de 20px entre elles */
-    margin-bottom: 20px;
-    box-sizing: border-box; /* Assure que la largeur inclut la bordure et le padding */
-}
-
-@media (max-width: 768px) {
-    .post-li {
-        width: calc(100% - 20px); /* Pour une carte par ligne sur les petits écrans */
-    }
-}
-.posts {
-    margin: 20px; /* Marge autour de la grille de cartes */
-}
-
-.post-li {
-    margin-bottom: 20px;
+    justify-content: center;
+    margin: 20px;
 }

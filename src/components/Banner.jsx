@@ -1,3 +1,5 @@
+import '../styles/Banner.css';
+
 function Banner({title})
 {
     return (

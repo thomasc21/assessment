@@ -43,4 +43,10 @@
   transform: rotateY(360deg);
 }
 
+button
+{
+margin: auto;
+margin-top: 5%;
+  display: flex;
+}
   
